@@ -5,7 +5,12 @@ namespace MyApp.Namespace
 {
     public class EmployeeController : Controller
     {
-        private readonly CodeFirstIGTcontext db=new CodeFirstIGTcontext();
+        private readonly  CodeFirstIGTcontext db;
+
+       public EmployeeController(CodeFirstIGTcontext _db) //Dependency Injection
+       {
+        db=_db;
+       }
         // GET: EmployeeController
         public ActionResult GetAllEmployees()
         {

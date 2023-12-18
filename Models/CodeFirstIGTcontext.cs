@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 namespace codefirsteg
 {
 
-class CodeFirstIGTcontext:DbContext
+public class CodeFirstIGTcontext:DbContext
 {
 public CodeFirstIGTcontext()
     {
